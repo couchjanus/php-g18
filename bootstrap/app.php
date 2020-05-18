@@ -23,14 +23,6 @@ function setErrorLogging(){
     ini_set('error_log', LOGS . '/error_log.php');
 }
 
-function render($template, $data = null) {
-    if ( $data ) {
-        extract($data);
-    }
-    $template .= '.php';
-    include VIEWS."/layouts/app.php"; 
-}
-
 function conf($mix) {
     $url = CONFIG."/".$mix.".json";
     try{
@@ -49,6 +41,16 @@ function conf($mix) {
         return false;
     }
 }
+
+function render($template, $data = null, $layout='app') 
+{
+	if ( !empty($data) ) {
+		extract($data);
+	}
+	$template .= '.php';
+	require VIEWS."/layouts/${layout}.php";
+}
+
 // ============================
 
 require_once realpath(__DIR__.'/../config/app.php');

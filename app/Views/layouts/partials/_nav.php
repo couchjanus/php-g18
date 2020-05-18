@@ -1,9 +1,9 @@
 <nav>
     <ul class="navbar">
-      <li class="navbar__logo"><a href="index.html">Shopaholic</a></li>
-      <li class="navbar__item"><a href="index.html">Home</a></li>
-      <li class="navbar__item"><a href="#">About</a></li>
-      <li class="navbar__item"><a href="#">Contact</a></li>
+      <li class="navbar__logo"><a href="/">Shopaholic</a></li>
+      <li class="navbar__item"><a href="/">Home</a></li>
+      <li class="navbar__item"><a href="/about">About</a></li>
+      <li class="navbar__item"><a href="/contact">Contact</a></li>
       
       <li class="navbar__item user"><a href="#"><i class="fas fa-user-plus"></i></a></li>
       <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
