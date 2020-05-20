@@ -1,69 +1,68 @@
-<div class="py-5 bg-light">
-    <div class="container">
-        <h1><?php echo $title; ?></h1>
-        <div class="row">
+<div class="container">
+    <h1 class="brand"><?php echo $title; ?></h1>
+    <?php if (isset($error)):?>
+    <div class="alert alert-danger" role="alert">
+        Ошибка <?= $error;?> Please try again!
+    </div>
+    <?php endif;?>
 
-            <div class="col">
-                <?php if (isset($error)):?>
-                    <div class="alert alert-danger" role="alert">
-                        Ошибка <?= $error;?> Please try again!
-                    </div>
+    <div class="wrapper">
+        <div class="company-info">
+            <h3><i class="fa fa-home"></i> Address</h3>
+            <ul>
+                <?php if (isset($address)):                        
+                    foreach ($address as $addr):?>
+                <li><i class="fas fa-road"></i> <?=$addr['street'];?></li>
+                <li><i class="fas fa-road"></i> <?=$addr['city'];?></li>
+                <li><i class="fas fa-road"></i> <?=$addr['country'];?></li>
+                <li><i class="fas fa-phone"></i> <?=$addr['mobile'];?></li>
+                <li><i class="fas fa-envelope"></i> <?=$addr['email'];?></li>
+                <?php endforeach;?>
                 <?php endif;?>
-
-                <div class="card">
-                    <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> Leave Your Message.
-                    </div>
-                    <div class="card-body">
-                        <form action="" method="POST">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name" name="username"
-                                    aria-describedby="emailHelp" placeholder="Enter name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="email" name="email"
-                                    aria-describedby="emailHelp" placeholder="Enter email" required>
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
-                            </div>
-                            <div class="mx-auto">
-                                <button type="submit" class="btn btn-primary text-right">Submit</button></div>
-                        </form>
-                    </div>
-                </div>
-
+            </ul>
+        </div>
+        <div class="contact">
+            <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> Leave Your Message.
             </div>
-            <div class="col-12 col-sm-4">
-                <div class="card bg-light mb-3">
-                    <div class="card-header bg-success text-white text-uppercase"><i class="fa fa-home"></i> Address
-                    </div>
-                    <div class="card-body">
-
-                        <?php 
-                        if (isset($address)):                        
-                            foreach ($address as $addr):?>
-                                <p><?php echo $addr['street'];?></p>
-                                <p><?php echo $addr['city'];?></p>
-                                <p><?php echo $addr['country'];?></p>
-                                <p>Email : <?php echo $addr['email'];?></p>
-                                <p>Tel.: <?php echo $addr['mobile'];?></p>
-                            <?php endforeach;?>
-                        <?php endif;?>
-                    </div>
-                </div>
-            </div>
+            <h3>E-mail Us</h3>
+            <form id="contact-form" action="" method="POST">
+                <p>
+                    <label>Name</label>
+                    <input type="text" name="username" id="name" required>
+                </p>
+                <p>
+                    <label>Company</label>
+                    <input type="text" name="company" id="company">
+                </p>
+                <p>
+                    <label>E-mail Address</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+                <p>
+                    <label>Phone Number</label>
+                    <input type="text" name="phone" id="phone">
+                </p>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+                <p class="full">
+                    <label>Message</label>
+                    <textarea name="message" rows="5" id="message"></textarea>
+                </p>
+                <p class="full">
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
 
         </div>
-        <div class="col">
-            <div class="card">
-                <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> Comments
-                </div>
-                <div class="card-body">
-                <?php
+
+    </div>
+
+    <div class="">
+    <div class="card">
+        <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> Comments
+        </div>
+        <div class="card-body">
+            <?php
                 if (isset($comments) and count($comments)>0):
                     printf("<h2>There Are %d Comments In Guest Book</h2>", count($comments));       
                     foreach ($comments as $value) {
@@ -74,8 +73,7 @@
 
                 endif;
                 ?>
-                </div>
-            </div>
         </div>
     </div>
+</div>
 </div>

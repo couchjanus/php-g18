@@ -5,7 +5,7 @@
 <?php require_once VIEWS.'/layouts/partials/_nav.php'; ?>
 
 <!-- cart -->
-<aside class="sidebar cart-overlay" id="sidebar">
+  <aside class="sidebar cart-overlay" id="sidebar">
     <div class="cart">
       <a href="#" class="close__btn"><i class="far fa-window-close"></i></a>
       <h2>Your Cart</h2>
@@ -24,9 +24,7 @@
     <div class="filter-section__wrapper">
 
     </div>
-    <section class="showcase-section">
-        <?php include(VIEWS."/".$template); ?>
-    </section>
+    <?php include(VIEWS."/".$template); ?>
 
   </main>
    

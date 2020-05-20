@@ -2,7 +2,7 @@
 // AboutController.php
 require_once CORE.'/Controller.php';
 
-class AboutController  extends Controller
+class AboutController extends Controller
 {
     public function index()
     {
