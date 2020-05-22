@@ -1,21 +1,16 @@
 <?php
 // HomeController.php
+require_once CORE.'/Controller.php';
+require_once MODELS.'/Category.php';
 
-class HomeController
+class HomeController extends Controller
 {
     public function index()
     {
       $title = 'Our <b>Best Cat Members Home Page </b>';
-      // render('home/index', ['title'=>$title]);
-      $this->render('home/index', compact('title'));
+      $categories = (new Category())->getCategories();
+      $this->view->render('home/index', compact('title', 'categories'));
     }
 
-    public function render($template, $data = null, $layout='app') 
-    {
-        if ( !empty($data) ) {  
-          extract($data); 
-        }
-        $template .= '.php';
-        return require VIEWS."/layouts/${layout}.php";
-    }
+    
 }

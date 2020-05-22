@@ -1,3 +1,7 @@
+<div class="filter-section__wrapper">
+    <?php require_once VIEWS.'/layouts/partials/_aside.php'; ?>
+</div>
+
 <div class="container">
     <h1 class="brand"><?php echo $title; ?></h1>
     <?php if (isset($error)):?>

@@ -1,3 +1,6 @@
+<div class="filter-section__wrapper">
+    <?php require_once VIEWS.'/layouts/partials/_filter.php'; ?>
+</div>
 <section class="showcase-section">
 <div class="py-5 bg-light">
    <div class="container">

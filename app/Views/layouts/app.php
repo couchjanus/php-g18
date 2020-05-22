@@ -21,9 +21,7 @@
   <!-- end of cart -->
 
   <main>
-    <div class="filter-section__wrapper">
-
-    </div>
+    
     <?php include(VIEWS."/".$template); ?>
 
   </main>
