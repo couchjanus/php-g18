@@ -57,5 +57,7 @@ require_once realpath(__DIR__.'/../config/app.php');
 
 setErrorLogging();
 init();
-
+       
+require_once CORE.'/Request.php';
 require_once CORE.'/Router.php';
+$request  = (new Router())->run(Request::uri());
