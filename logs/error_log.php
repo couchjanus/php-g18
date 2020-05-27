@@ -1346,3 +1346,333 @@ Stack trace:
 #5 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
 #6 {main}
   thrown in /home/janus/www/php-g18/core/Connection.php on line 10
+[26-May-2020 17:43:04 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-g18/core/Model.php:16
+Stack trace:
+#0 /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php(16): Model::all()
+#1 /home/janus/www/php-g18/core/Router.php(89): CategoryController->index()
+#2 /home/janus/www/php-g18/core/Router.php(46): Router->init()
+#3 /home/janus/www/php-g18/bootstrap/app.php(63): Router->run()
+#4 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#5 {main}
+  thrown in /home/janus/www/php-g18/core/Model.php on line 16
+[26-May-2020 17:48:21 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-g18/core/Model.php:16
+Stack trace:
+#0 /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php(16): Model::all()
+#1 /home/janus/www/php-g18/core/Router.php(89): CategoryController->index()
+#2 /home/janus/www/php-g18/core/Router.php(46): Router->init()
+#3 /home/janus/www/php-g18/bootstrap/app.php(63): Router->run()
+#4 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#5 {main}
+  thrown in /home/janus/www/php-g18/core/Model.php on line 16
+[26-May-2020 17:58:52 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-g18/core/Model.php:16
+Stack trace:
+#0 /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php(16): Model::all()
+#1 /home/janus/www/php-g18/core/Router.php(89): CategoryController->index()
+#2 /home/janus/www/php-g18/core/Router.php(46): Router->init()
+#3 /home/janus/www/php-g18/bootstrap/app.php(63): Router->run()
+#4 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#5 {main}
+  thrown in /home/janus/www/php-g18/core/Model.php on line 16
+[26-May-2020 18:22:23 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2031  in /home/janus/www/php-g18/core/Model.php:31
+Stack trace:
+#0 /home/janus/www/php-g18/core/Model.php(31): PDOStatement->execute()
+#1 /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php(46): Model::getByPrimaryKey()
+#2 /home/janus/www/php-g18/core/Router.php(89): CategoryController->edit()
+#3 /home/janus/www/php-g18/core/Router.php(55): Router->init()
+#4 /home/janus/www/php-g18/bootstrap/app.php(63): Router->run()
+#5 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-g18/core/Model.php on line 31
+[26-May-2020 18:22:27 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2031  in /home/janus/www/php-g18/core/Model.php:31
+Stack trace:
+#0 /home/janus/www/php-g18/core/Model.php(31): PDOStatement->execute()
+#1 /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php(37): Model::getByPrimaryKey()
+#2 /home/janus/www/php-g18/core/Router.php(89): CategoryController->show()
+#3 /home/janus/www/php-g18/core/Router.php(55): Router->init()
+#4 /home/janus/www/php-g18/bootstrap/app.php(63): Router->run()
+#5 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-g18/core/Model.php on line 31
+[26-May-2020 18:31:16 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in /home/janus/www/php-g18/app/Views/admin/categories/delete.php on line 5
+[26-May-2020 18:31:16 Europe/Kiev] PHP Stack trace:
+[26-May-2020 18:31:16 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[26-May-2020 18:31:16 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[26-May-2020 18:31:16 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:63
+[26-May-2020 18:31:16 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:55
+[26-May-2020 18:31:16 Europe/Kiev] PHP   5. CategoryController->delete() /home/janus/www/php-g18/core/Router.php:89
+[26-May-2020 18:31:16 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php:70
+[26-May-2020 18:31:16 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[26-May-2020 18:31:16 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/admin.php:19
+[26-May-2020 18:31:23 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in /home/janus/www/php-g18/app/Views/admin/categories/delete.php on line 5
+[26-May-2020 18:31:23 Europe/Kiev] PHP Stack trace:
+[26-May-2020 18:31:23 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[26-May-2020 18:31:23 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[26-May-2020 18:31:23 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:63
+[26-May-2020 18:31:23 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:55
+[26-May-2020 18:31:23 Europe/Kiev] PHP   5. CategoryController->delete() /home/janus/www/php-g18/core/Router.php:89
+[26-May-2020 18:31:23 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php:70
+[26-May-2020 18:31:23 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[26-May-2020 18:31:23 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/admin.php:19
+[26-May-2020 18:48:51 Europe/Kiev] PHP Deprecated:  Non-static method Model::update() should not be called statically in /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php on line 55
+[26-May-2020 18:48:51 Europe/Kiev] PHP Stack trace:
+[26-May-2020 18:48:51 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[26-May-2020 18:48:51 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[26-May-2020 18:48:51 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:63
+[26-May-2020 18:48:51 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:46
+[26-May-2020 18:48:51 Europe/Kiev] PHP   5. CategoryController->patch() /home/janus/www/php-g18/core/Router.php:89
+[26-May-2020 18:55:55 Europe/Kiev] PHP Notice:  Array to string conversion in /home/janus/www/php-g18/core/Model.php on line 65
+[26-May-2020 18:55:55 Europe/Kiev] PHP Stack trace:
+[26-May-2020 18:55:55 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[26-May-2020 18:55:55 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[26-May-2020 18:55:55 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:63
+[26-May-2020 18:55:55 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:46
+[26-May-2020 18:55:55 Europe/Kiev] PHP   5. CategoryController->patch() /home/janus/www/php-g18/core/Router.php:89
+[26-May-2020 18:55:55 Europe/Kiev] PHP   6. Model::update() /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php:55
+[26-May-2020 18:55:55 Europe/Kiev] PHP Notice:  Array to string conversion in /home/janus/www/php-g18/core/Model.php on line 65
+[26-May-2020 18:55:55 Europe/Kiev] PHP Stack trace:
+[26-May-2020 18:55:55 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[26-May-2020 18:55:55 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[26-May-2020 18:55:55 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:63
+[26-May-2020 18:55:55 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:46
+[26-May-2020 18:55:55 Europe/Kiev] PHP   5. CategoryController->patch() /home/janus/www/php-g18/core/Router.php:89
+[26-May-2020 18:55:55 Europe/Kiev] PHP   6. Model::update() /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php:55
+[26-May-2020 18:55:55 Europe/Kiev] PHP Warning:  implode(): Invalid arguments passed in /home/janus/www/php-g18/core/Model.php on line 65
+[26-May-2020 18:55:55 Europe/Kiev] PHP Stack trace:
+[26-May-2020 18:55:55 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[26-May-2020 18:55:55 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[26-May-2020 18:55:55 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:63
+[26-May-2020 18:55:55 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:46
+[26-May-2020 18:55:55 Europe/Kiev] PHP   5. CategoryController->patch() /home/janus/www/php-g18/core/Router.php:89
+[26-May-2020 18:55:55 Europe/Kiev] PHP   6. Model::update() /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php:55
+[26-May-2020 18:55:55 Europe/Kiev] PHP   7. implode() /home/janus/www/php-g18/core/Model.php:65
+[26-May-2020 18:57:27 Europe/Kiev] PHP Notice:  Array to string conversion in /home/janus/www/php-g18/core/Model.php on line 66
+[26-May-2020 18:57:27 Europe/Kiev] PHP Stack trace:
+[26-May-2020 18:57:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[26-May-2020 18:57:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[26-May-2020 18:57:27 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:63
+[26-May-2020 18:57:27 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:46
+[26-May-2020 18:57:27 Europe/Kiev] PHP   5. CategoryController->patch() /home/janus/www/php-g18/core/Router.php:89
+[26-May-2020 18:57:27 Europe/Kiev] PHP   6. Model::update() /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php:55
+[26-May-2020 19:16:18 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters in /home/janus/www/php-g18/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g18/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g18/core/Model.php(70): Connection->preparedStatment()
+#2 /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php(55): Model::update()
+#3 /home/janus/www/php-g18/core/Router.php(89): CategoryController->patch()
+#4 /home/janus/www/php-g18/core/Router.php(46): Router->init()
+#5 /home/janus/www/php-g18/bootstrap/app.php(63): Router->run()
+#6 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g18/core/Connection.php on line 26
+[26-May-2020 19:19:35 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters in /home/janus/www/php-g18/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g18/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g18/core/Model.php(70): Connection->preparedStatment()
+#2 /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php(55): Model::update()
+#3 /home/janus/www/php-g18/core/Router.php(89): CategoryController->patch()
+#4 /home/janus/www/php-g18/core/Router.php(46): Router->init()
+#5 /home/janus/www/php-g18/bootstrap/app.php(63): Router->run()
+#6 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g18/core/Connection.php on line 26
+[26-May-2020 19:21:55 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters in /home/janus/www/php-g18/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g18/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g18/core/Model.php(70): Connection->preparedStatment()
+#2 /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php(55): Model::update()
+#3 /home/janus/www/php-g18/core/Router.php(89): CategoryController->patch()
+#4 /home/janus/www/php-g18/core/Router.php(46): Router->init()
+#5 /home/janus/www/php-g18/bootstrap/app.php(63): Router->run()
+#6 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g18/core/Connection.php on line 26
+[26-May-2020 19:22:38 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id=19' at line 1 in /home/janus/www/php-g18/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g18/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g18/core/Model.php(70): Connection->preparedStatment()
+#2 /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php(55): Model::update()
+#3 /home/janus/www/php-g18/core/Router.php(89): CategoryController->patch()
+#4 /home/janus/www/php-g18/core/Router.php(46): Router->init()
+#5 /home/janus/www/php-g18/bootstrap/app.php(63): Router->run()
+#6 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g18/core/Connection.php on line 26
+[26-May-2020 19:24:45 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'boo category,1) WHERE id=19' at line 1 in /home/janus/www/php-g18/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g18/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g18/core/Model.php(70): Connection->preparedStatment()
+#2 /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php(55): Model::update()
+#3 /home/janus/www/php-g18/core/Router.php(89): CategoryController->patch()
+#4 /home/janus/www/php-g18/core/Router.php(46): Router->init()
+#5 /home/janus/www/php-g18/bootstrap/app.php(63): Router->run()
+#6 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g18/core/Connection.php on line 26
+[26-May-2020 19:27:15 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'boo category,1) WHERE id=19' at line 1 in /home/janus/www/php-g18/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g18/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g18/core/Model.php(70): Connection->preparedStatment()
+#2 /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php(55): Model::update()
+#3 /home/janus/www/php-g18/core/Router.php(89): CategoryController->patch()
+#4 /home/janus/www/php-g18/core/Router.php(46): Router->init()
+#5 /home/janus/www/php-g18/bootstrap/app.php(63): Router->run()
+#6 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g18/core/Connection.php on line 26
+[26-May-2020 19:31:40 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id=19' at line 1 in /home/janus/www/php-g18/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g18/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g18/core/Model.php(70): Connection->preparedStatment()
+#2 /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php(55): Model::update()
+#3 /home/janus/www/php-g18/core/Router.php(89): CategoryController->patch()
+#4 /home/janus/www/php-g18/core/Router.php(46): Router->init()
+#5 /home/janus/www/php-g18/bootstrap/app.php(63): Router->run()
+#6 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g18/core/Connection.php on line 26
+[26-May-2020 19:41:05 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id=19' at line 1 in /home/janus/www/php-g18/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g18/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g18/core/Model.php(70): Connection->preparedStatment()
+#2 /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php(55): Model::update()
+#3 /home/janus/www/php-g18/core/Router.php(89): CategoryController->patch()
+#4 /home/janus/www/php-g18/core/Router.php(46): Router->init()
+#5 /home/janus/www/php-g18/bootstrap/app.php(63): Router->run()
+#6 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g18/core/Connection.php on line 26
+[26-May-2020 19:42:30 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id=19' at line 1 in /home/janus/www/php-g18/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g18/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g18/core/Model.php(70): Connection->preparedStatment()
+#2 /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php(55): Model::update()
+#3 /home/janus/www/php-g18/core/Router.php(89): CategoryController->patch()
+#4 /home/janus/www/php-g18/core/Router.php(46): Router->init()
+#5 /home/janus/www/php-g18/bootstrap/app.php(63): Router->run()
+#6 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g18/core/Connection.php on line 26
+[26-May-2020 19:45:27 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id=19' at line 1 in /home/janus/www/php-g18/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g18/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g18/core/Model.php(70): Connection->preparedStatment()
+#2 /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php(55): Model::update()
+#3 /home/janus/www/php-g18/core/Router.php(89): CategoryController->patch()
+#4 /home/janus/www/php-g18/core/Router.php(46): Router->init()
+#5 /home/janus/www/php-g18/bootstrap/app.php(63): Router->run()
+#6 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g18/core/Connection.php on line 26
+[26-May-2020 19:45:46 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id=19' at line 1 in /home/janus/www/php-g18/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g18/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g18/core/Model.php(70): Connection->preparedStatment()
+#2 /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php(55): Model::update()
+#3 /home/janus/www/php-g18/core/Router.php(89): CategoryController->patch()
+#4 /home/janus/www/php-g18/core/Router.php(46): Router->init()
+#5 /home/janus/www/php-g18/bootstrap/app.php(63): Router->run()
+#6 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g18/core/Connection.php on line 26
+[26-May-2020 19:54:35 Europe/Kiev] PHP Notice:  Undefined variable: query in /home/janus/www/php-g18/core/Model.php on line 65
+[26-May-2020 19:54:35 Europe/Kiev] PHP Stack trace:
+[26-May-2020 19:54:35 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[26-May-2020 19:54:35 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[26-May-2020 19:54:35 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:63
+[26-May-2020 19:54:35 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:46
+[26-May-2020 19:54:35 Europe/Kiev] PHP   5. CategoryController->patch() /home/janus/www/php-g18/core/Router.php:89
+[26-May-2020 19:54:35 Europe/Kiev] PHP   6. Model::update() /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php:55
+[26-May-2020 20:02:01 Europe/Kiev] PHP Parse error:  syntax error, unexpected ')' in /home/janus/www/php-g18/core/Model.php on line 72
+[26-May-2020 20:06:15 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'boo' in 'field list' in /home/janus/www/php-g18/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g18/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g18/core/Model.php(71): Connection->preparedStatment()
+#2 /home/janus/www/php-g18/app/Controllers/Admin/CategoryController.php(55): Model::update()
+#3 /home/janus/www/php-g18/core/Router.php(89): CategoryController->patch()
+#4 /home/janus/www/php-g18/core/Router.php(46): Router->init()
+#5 /home/janus/www/php-g18/bootstrap/app.php(63): Router->run()
+#6 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g18/core/Connection.php on line 26
+[26-May-2020 22:38:40 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g18/app/Controllers/UsersController.php does not exists. in /home/janus/www/php-g18/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#1 /home/janus/www/php-g18/bootstrap/app.php(64): Router->run()
+#2 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g18/core/Router.php on line 70
+[26-May-2020 22:43:57 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g18/core/Router.php on line 43
+[26-May-2020 22:43:57 Europe/Kiev] PHP Stack trace:
+[26-May-2020 22:43:57 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[26-May-2020 22:43:57 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[26-May-2020 22:43:57 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[26-May-2020 22:43:57 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g18/core/Router.php on line 49
+[26-May-2020 22:43:57 Europe/Kiev] PHP Stack trace:
+[26-May-2020 22:43:57 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[26-May-2020 22:43:57 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[26-May-2020 22:43:57 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[26-May-2020 22:43:57 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g18/core/Router.php:43
+[26-May-2020 22:43:57 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g18/app/Controllers/.php does not exists. in /home/janus/www/php-g18/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g18/bootstrap/app.php(64): Router->run()
+#2 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g18/core/Router.php on line 70
+[26-May-2020 22:45:53 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g18/core/Router.php on line 43
+[26-May-2020 22:45:53 Europe/Kiev] PHP Stack trace:
+[26-May-2020 22:45:53 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[26-May-2020 22:45:53 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[26-May-2020 22:45:53 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[26-May-2020 22:45:53 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g18/core/Router.php on line 49
+[26-May-2020 22:45:53 Europe/Kiev] PHP Stack trace:
+[26-May-2020 22:45:53 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[26-May-2020 22:45:53 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[26-May-2020 22:45:53 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[26-May-2020 22:45:53 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g18/core/Router.php:43
+[26-May-2020 22:45:53 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g18/app/Controllers/.php does not exists. in /home/janus/www/php-g18/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g18/bootstrap/app.php(64): Router->run()
+#2 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g18/core/Router.php on line 70
+[26-May-2020 22:54:29 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g18/core/Router.php on line 43
+[26-May-2020 22:54:29 Europe/Kiev] PHP Stack trace:
+[26-May-2020 22:54:29 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[26-May-2020 22:54:29 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[26-May-2020 22:54:29 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[26-May-2020 22:54:29 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g18/core/Router.php on line 49
+[26-May-2020 22:54:29 Europe/Kiev] PHP Stack trace:
+[26-May-2020 22:54:29 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[26-May-2020 22:54:29 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[26-May-2020 22:54:29 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[26-May-2020 22:54:29 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g18/core/Router.php:43
+[26-May-2020 22:54:29 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g18/app/Controllers/.php does not exists. in /home/janus/www/php-g18/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g18/bootstrap/app.php(64): Router->run()
+#2 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g18/core/Router.php on line 70
+[27-May-2020 09:17:32 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Connection::getPreparedStatment() in /home/janus/www/php-g18/core/Model.php:84
+Stack trace:
+#0 /home/janus/www/php-g18/app/Models/Category.php(12): Model::getOne()
+#1 /home/janus/www/php-g18/app/Controllers/HomeController.php(11): Category::getCategories()
+#2 /home/janus/www/php-g18/core/Router.php(74): HomeController->index()
+#3 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#4 /home/janus/www/php-g18/bootstrap/app.php(64): Router->run()
+#5 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-g18/core/Model.php on line 84
+[27-May-2020 09:18:52 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2031  in /home/janus/www/php-g18/core/Model.php:89
+Stack trace:
+#0 /home/janus/www/php-g18/core/Model.php(89): PDOStatement->execute()
+#1 /home/janus/www/php-g18/app/Models/Category.php(12): Model::getOne()
+#2 /home/janus/www/php-g18/app/Controllers/HomeController.php(11): Category::getCategories()
+#3 /home/janus/www/php-g18/core/Router.php(74): HomeController->index()
+#4 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#5 /home/janus/www/php-g18/bootstrap/app.php(64): Router->run()
+#6 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g18/core/Model.php on line 89
