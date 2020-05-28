@@ -9,7 +9,9 @@ class Category extends Model
 
     public static function getCategories()
     {
-        return parent::get(['status'=>1]);
+        $sql = "SELECT COUNT(*) count_product, category_id, categories.* FROM products INNER JOIN categories 
+        ON categories.id = products.category_id
+        WHERE categories.status =1 GROUP BY category_id";
+        return parent::getWithSql($sql);
     }
-
 }

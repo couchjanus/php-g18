@@ -4,13 +4,13 @@
         <h5 class="filters__title">Categories</h5>
         <?php foreach ($categories as $category):?>
             <div class="filters__item">
-            <div class="checkbox">
-                <input id="checkbox-1" type="checkbox" />
-                <label for="checkbox-1"><?=$category->name;?><span class="box"></span>
-                    <div class="tooltip top" data-tooltip="Younger than 18 months."><span><i
-                                class="icon-info"></i></span></div>
-                </label>
-            </div><span class="badge status-primary">10</span>
+                <div class="checkbox">
+                    <input id="checkbox-<?=$category->id;?>" data="<?=$category->id;?>" type="checkbox" class="categoryChack"/>
+                    <label for="checkbox-<?=$category->id;?>"><?=$category->name;?><span class="box"></span>
+                        <div class="tooltip top" data-tooltip="<?=$category->name;?>"><span><i class="icon-info"></i></span></div>
+                    </label>
+                </div>
+                <span class="badge status-primary"><?=$category->count_product;?></span>
             </div>
         <?php endforeach;?>
     </div>
@@ -42,4 +42,18 @@
             </div><span class="badge status-primary">3</span>
         </div>
     </div>
+
+    <script>
+    //     let categoryChack = document.querySelectorAll(".categoryChack");
+    //     categoryChack.forEach(item => {
+    //         item.addEventListener('click', function(e){
+    //             if (e.target.checked == true) {
+    //                 alert("you checked this box");
+    //                 // api/categories/{id}
+    //             }
+    //         })
+    // });
+    </script>
 </section>
+
+

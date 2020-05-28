@@ -1676,3 +1676,208 @@ Stack trace:
 #6 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
 #7 {main}
   thrown in /home/janus/www/php-g18/core/Model.php on line 89
+[27-May-2020 13:45:00 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method BrandController::render() in /home/janus/www/php-g18/app/Controllers/Admin/BrandController.php:17
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(74): BrandController->index()
+#1 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#2 /home/janus/www/php-g18/bootstrap/app.php(64): Router->run()
+#3 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g18/app/Controllers/Admin/BrandController.php on line 17
+[27-May-2020 13:46:16 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g18/core/Router.php on line 43
+[27-May-2020 13:46:16 Europe/Kiev] PHP Stack trace:
+[27-May-2020 13:46:16 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[27-May-2020 13:46:16 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[27-May-2020 13:46:16 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[27-May-2020 13:46:16 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g18/core/Router.php on line 49
+[27-May-2020 13:46:16 Europe/Kiev] PHP Stack trace:
+[27-May-2020 13:46:16 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[27-May-2020 13:46:16 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[27-May-2020 13:46:16 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[27-May-2020 13:46:16 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g18/core/Router.php:43
+[27-May-2020 13:46:16 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g18/app/Controllers/.php does not exists. in /home/janus/www/php-g18/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g18/bootstrap/app.php(64): Router->run()
+#2 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g18/core/Router.php on line 70
+[27-May-2020 13:48:54 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g18/core/Router.php on line 43
+[27-May-2020 13:48:54 Europe/Kiev] PHP Stack trace:
+[27-May-2020 13:48:54 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[27-May-2020 13:48:54 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[27-May-2020 13:48:54 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[27-May-2020 13:48:54 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g18/core/Router.php on line 49
+[27-May-2020 13:48:54 Europe/Kiev] PHP Stack trace:
+[27-May-2020 13:48:54 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[27-May-2020 13:48:54 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[27-May-2020 13:48:54 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[27-May-2020 13:48:54 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g18/core/Router.php:43
+[27-May-2020 13:48:54 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g18/app/Controllers/.php does not exists. in /home/janus/www/php-g18/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g18/bootstrap/app.php(64): Router->run()
+#2 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g18/core/Router.php on line 70
+[27-May-2020 13:49:43 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g18/core/Router.php on line 43
+[27-May-2020 13:49:43 Europe/Kiev] PHP Stack trace:
+[27-May-2020 13:49:43 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[27-May-2020 13:49:43 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[27-May-2020 13:49:43 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[27-May-2020 13:49:43 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g18/core/Router.php on line 49
+[27-May-2020 13:49:43 Europe/Kiev] PHP Stack trace:
+[27-May-2020 13:49:43 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[27-May-2020 13:49:43 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[27-May-2020 13:49:43 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[27-May-2020 13:49:43 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g18/core/Router.php:43
+[27-May-2020 13:49:43 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g18/app/Controllers/.php does not exists. in /home/janus/www/php-g18/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g18/bootstrap/app.php(64): Router->run()
+#2 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g18/core/Router.php on line 70
+[27-May-2020 14:01:27 Europe/Kiev] PHP Warning:  Use of undefined constant VENDOR - assumed 'VENDOR' (this will throw an Error in a future version of PHP) in /home/janus/www/php-g18/app/Models/Product.php on line 2
+[27-May-2020 14:01:27 Europe/Kiev] PHP Stack trace:
+[27-May-2020 14:01:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[27-May-2020 14:01:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[27-May-2020 14:01:27 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[27-May-2020 14:01:27 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[27-May-2020 14:01:27 Europe/Kiev] PHP   5. include_once() /home/janus/www/php-g18/core/Router.php:61
+[27-May-2020 14:01:27 Europe/Kiev] PHP   6. require_once() /home/janus/www/php-g18/app/Controllers/Admin/ProductController.php:6
+[27-May-2020 14:01:27 Europe/Kiev] PHP Warning:  require_once(VENDOR/framework/Model.php): failed to open stream: No such file or directory in /home/janus/www/php-g18/app/Models/Product.php on line 2
+[27-May-2020 14:01:27 Europe/Kiev] PHP Stack trace:
+[27-May-2020 14:01:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[27-May-2020 14:01:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[27-May-2020 14:01:27 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[27-May-2020 14:01:27 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[27-May-2020 14:01:27 Europe/Kiev] PHP   5. include_once() /home/janus/www/php-g18/core/Router.php:61
+[27-May-2020 14:01:27 Europe/Kiev] PHP   6. require_once() /home/janus/www/php-g18/app/Controllers/Admin/ProductController.php:6
+[27-May-2020 14:01:27 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'VENDOR/framework/Model.php' (include_path='.:/usr/share/php') in /home/janus/www/php-g18/app/Models/Product.php on line 2
+[27-May-2020 14:01:27 Europe/Kiev] PHP Stack trace:
+[27-May-2020 14:01:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[27-May-2020 14:01:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[27-May-2020 14:01:27 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[27-May-2020 14:01:27 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[27-May-2020 14:01:27 Europe/Kiev] PHP   5. include_once() /home/janus/www/php-g18/core/Router.php:61
+[27-May-2020 14:01:27 Europe/Kiev] PHP   6. require_once() /home/janus/www/php-g18/app/Controllers/Admin/ProductController.php:6
+[27-May-2020 14:27:19 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g18/core/Router.php on line 43
+[27-May-2020 14:27:19 Europe/Kiev] PHP Stack trace:
+[27-May-2020 14:27:19 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[27-May-2020 14:27:19 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[27-May-2020 14:27:19 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[27-May-2020 14:27:19 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g18/core/Router.php on line 49
+[27-May-2020 14:27:19 Europe/Kiev] PHP Stack trace:
+[27-May-2020 14:27:19 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[27-May-2020 14:27:19 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[27-May-2020 14:27:19 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[27-May-2020 14:27:19 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g18/core/Router.php:43
+[27-May-2020 14:27:19 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g18/app/Controllers/.php does not exists. in /home/janus/www/php-g18/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g18/bootstrap/app.php(64): Router->run()
+#2 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g18/core/Router.php on line 70
+[27-May-2020 14:29:30 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: 'on' for column 'is_new' at row 1 in /home/janus/www/php-g18/core/Model.php:45
+Stack trace:
+#0 /home/janus/www/php-g18/core/Model.php(45): PDOStatement->execute()
+#1 /home/janus/www/php-g18/app/Controllers/Admin/ProductController.php(50): Model::insert()
+#2 /home/janus/www/php-g18/core/Router.php(74): ProductController->store()
+#3 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#4 /home/janus/www/php-g18/bootstrap/app.php(64): Router->run()
+#5 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-g18/core/Model.php on line 45
+[27-May-2020 14:53:27 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Picture::store() in /home/janus/www/php-g18/app/Controllers/Admin/ProductController.php:98
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(74): ProductController->store()
+#1 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#2 /home/janus/www/php-g18/bootstrap/app.php(64): Router->run()
+#3 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g18/app/Controllers/Admin/ProductController.php on line 98
+[28-May-2020 16:18:22 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in /home/janus/www/php-g18/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g18/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g18/core/Model.php(94): Connection->preparedStatment()
+#2 /home/janus/www/php-g18/app/Models/Category.php(24): Model::getWithSql()
+#3 /home/janus/www/php-g18/app/Controllers/HomeController.php(12): Category::getCategories()
+#4 /home/janus/www/php-g18/core/Router.php(74): HomeController->index()
+#5 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#6 /home/janus/www/php-g18/bootstrap/app.php(64): Router->run()
+#7 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-g18/core/Connection.php on line 26
+[28-May-2020 16:29:26 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'COUNT(DISTINCT `products`.`category_id`) as `pid`
+        FROM `categories` INNE' at line 1 in /home/janus/www/php-g18/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g18/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g18/core/Model.php(94): Connection->preparedStatment()
+#2 /home/janus/www/php-g18/app/Models/Category.php(24): Model::getWithSql()
+#3 /home/janus/www/php-g18/app/Controllers/HomeController.php(12): Category::getCategories()
+#4 /home/janus/www/php-g18/core/Router.php(74): HomeController->index()
+#5 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#6 /home/janus/www/php-g18/bootstrap/app.php(64): Router->run()
+#7 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-g18/core/Connection.php on line 26
+[28-May-2020 16:31:10 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'COUNT(DISTINCT `products`.`category_id`) as `pid` FROM `categories` INNER JOIN `' at line 1 in /home/janus/www/php-g18/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g18/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g18/core/Model.php(94): Connection->preparedStatment()
+#2 /home/janus/www/php-g18/app/Models/Category.php(23): Model::getWithSql()
+#3 /home/janus/www/php-g18/app/Controllers/HomeController.php(12): Category::getCategories()
+#4 /home/janus/www/php-g18/core/Router.php(74): HomeController->index()
+#5 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#6 /home/janus/www/php-g18/bootstrap/app.php(64): Router->run()
+#7 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-g18/core/Connection.php on line 26
+[28-May-2020 16:31:45 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'COUNT(DISTINCT `products`.`category_id`) as `pid` FROM `categories` INNER JOIN `' at line 1 in /home/janus/www/php-g18/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g18/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g18/core/Model.php(94): Connection->preparedStatment()
+#2 /home/janus/www/php-g18/app/Models/Category.php(23): Model::getWithSql()
+#3 /home/janus/www/php-g18/app/Controllers/HomeController.php(12): Category::getCategories()
+#4 /home/janus/www/php-g18/core/Router.php(74): HomeController->index()
+#5 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#6 /home/janus/www/php-g18/bootstrap/app.php(64): Router->run()
+#7 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-g18/core/Connection.php on line 26
+[28-May-2020 16:31:47 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'COUNT(DISTINCT `products`.`category_id`) as `pid` FROM `categories` INNER JOIN `' at line 1 in /home/janus/www/php-g18/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g18/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g18/core/Model.php(94): Connection->preparedStatment()
+#2 /home/janus/www/php-g18/app/Models/Category.php(23): Model::getWithSql()
+#3 /home/janus/www/php-g18/app/Controllers/HomeController.php(12): Category::getCategories()
+#4 /home/janus/www/php-g18/core/Router.php(74): HomeController->index()
+#5 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#6 /home/janus/www/php-g18/bootstrap/app.php(64): Router->run()
+#7 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-g18/core/Connection.php on line 26
+[28-May-2020 16:41:53 Europe/Kiev] PHP Notice:  Undefined variable: count_product in /home/janus/www/php-g18/app/Views/layouts/partials/_filter.php on line 13
+[28-May-2020 16:41:53 Europe/Kiev] PHP Stack trace:
+[28-May-2020 16:41:53 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[28-May-2020 16:41:53 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[28-May-2020 16:41:53 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[28-May-2020 16:41:53 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[28-May-2020 16:41:53 Europe/Kiev] PHP   5. HomeController->index() /home/janus/www/php-g18/core/Router.php:74
+[28-May-2020 16:41:53 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/HomeController.php:13
+[28-May-2020 16:41:53 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[28-May-2020 16:41:53 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:25
+[28-May-2020 16:41:53 Europe/Kiev] PHP   9. require_once() /home/janus/www/php-g18/app/Views/home/index.php:2
+[28-May-2020 16:41:53 Europe/Kiev] PHP Notice:  Undefined variable: count_product in /home/janus/www/php-g18/app/Views/layouts/partials/_filter.php on line 13
+[28-May-2020 16:41:53 Europe/Kiev] PHP Stack trace:
+[28-May-2020 16:41:53 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[28-May-2020 16:41:53 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[28-May-2020 16:41:53 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:64
+[28-May-2020 16:41:53 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[28-May-2020 16:41:53 Europe/Kiev] PHP   5. HomeController->index() /home/janus/www/php-g18/core/Router.php:74
+[28-May-2020 16:41:53 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/HomeController.php:13
+[28-May-2020 16:41:53 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[28-May-2020 16:41:53 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:25
+[28-May-2020 16:41:53 Europe/Kiev] PHP   9. require_once() /home/janus/www/php-g18/app/Views/home/index.php:2
