@@ -1,3 +1,9 @@
+<footer>
+<p> 
+    &copy; <a href="/">Great Shopaholic</a> Created with <i class="fa fa-heart"></i> by <a target="_blank" href="">Author</a>.
+</p>
+</footer>
+
 <template id="catouselNav">
     <div class="carousel-wrapper">
         <div class="carousel-detail">

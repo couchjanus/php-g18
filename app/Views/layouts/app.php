@@ -21,7 +21,7 @@
   <!-- end of cart -->
 
   <main>
-    
+    <?php require_once VIEWS.'/layouts/partials/_flash-message.php'; ?>
     <?php include(VIEWS."/".$template); ?>
 
   </main>

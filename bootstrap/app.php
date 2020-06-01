@@ -42,14 +42,6 @@ function conf($mix) {
     }
 }
 
-function render($template, $data = null, $layout='app') 
-{
-	if ( !empty($data) ) {
-		extract($data);
-	}
-	$template .= '.php';
-	require VIEWS."/layouts/${layout}.php";
-}
 
 // ============================
 
@@ -57,8 +49,13 @@ require_once realpath(__DIR__.'/../config/app.php');
 
 setErrorLogging();
 init();
-       
+
+header('Set-Cookie: foo="Now I see You"');
+setcookie('bar', strval('Now I see You again'));
+
 require_once CORE.'/Request.php';
 require_once CORE.'/Router.php';
+require_once CORE.'/Session.php';
+require_once CORE.'/Helper.php';
 $router = Router::load(ROUTES);
 $router->run(Request::uri(), Request::method());

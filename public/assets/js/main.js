@@ -108,7 +108,7 @@ class App {
         products.forEach(product => {
             result += this.productTemplate(product);
         });
-        el('.showcase-section').innerHTML = result;
+        if (el('.showcase-section')) el('.showcase-section').innerHTML = result;
        
     }
 

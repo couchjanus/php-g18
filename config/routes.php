@@ -22,8 +22,23 @@ $router->get('admin/products', 'Admin\ProductController@index');
 $router->get('admin/products/create', 'Admin\ProductController@create');
 $router->post('admin/products/store', 'Admin\ProductController@store');
 
+$router->get('admin/roles', 'Admin\RoleController@index');
+$router->get('admin/roles/create', 'Admin\RoleController@create');
+$router->post('admin/roles/store', 'Admin\RoleController@store');
+
+$router->get('admin/users', 'Admin\UserController@index');
+$router->get('admin/users/create', 'Admin\UserController@create');
+$router->post('admin/users/store', 'Admin\UserController@store');
+
 $router->get('api/shop', 'HomeController@getProducts');
 $router->get('api/shop/{id}', 'HomeController@getProduct');
 $router->get('api/product/{id}', 'HomeController@getProductItem');
 $router->get('api/categories', 'HomeController@getCategories');
 $router->get('api/categories/{id}', 'HomeController@getProductsByCategory');
+
+
+$router->get('sign', 'AuthController@signForm');
+$router->post('register', 'AuthController@signup');
+$router->post('login', 'AuthController@signin');
+$router->get('logout', 'AuthController@logout');
+$router->get('profile', 'ProfileController@index');

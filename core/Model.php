@@ -104,6 +104,13 @@ class Model
         return $statment->fetch(PDO::FETCH_OBJ);
     }
 
+    public static function getOne($sql){
+        $pdo = Connection::connect();
+        $statment = $pdo->preparedStatment($sql);
+        $statment->execute();
+        return $statment->fetch(PDO::FETCH_OBJ);
+    }
+
     public static function lastId() 
     {
         $query = "SELECT id FROM " . static::$table . " ORDER BY id DESC LIMIT 1";
@@ -112,4 +119,6 @@ class Model
         $statment->execute();
         return $statment->fetch(PDO::FETCH_ASSOC)['id'];
     }
+
+    
 }

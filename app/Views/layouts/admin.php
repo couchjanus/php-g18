@@ -16,6 +16,7 @@
            <!-- Page Content  -->
            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
                <?php require_once VIEWS.'/layouts/partials/admin/_toolbox.php'; ?>
+               <?php require_once VIEWS.'/layouts/partials/_flash-message.php'; ?>
                <?php include(VIEWS."/".$template); ?>
            </main>
         </div>
