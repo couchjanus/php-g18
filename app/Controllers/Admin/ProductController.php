@@ -42,16 +42,7 @@ class ProductController extends Controller
         $this->view->render('admin/products/create', compact('title', 'categories', 'brands'), 'admin');
     }
 
-    public function store0()
-    {
-        $request = new Request();
-        $status = $request->status ? 1:0;
-        $is_new = $request->is_new ? 1:0;
-        (new Product())::insert(["name"=>$request->name, "status"=>$status,
-        'price'=>$request->price, 'brand_id'=>$request->brand_id, 'category_id'=>$request->category_id, 'description'=>$request->description, 'is_new'=>$is_new]);
-        header('Location: /admin/products');
-    }
-
+    
     public function store()
     {
         $request = new Request();

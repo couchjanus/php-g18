@@ -8,9 +8,9 @@
                 <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <span>or use your email for registration</span>
-            <input type="email" name="email" placeholder="Email" />
-            <input type="password" name="password" placeholder="Password" />
-            <input type="password" name="confirmpassword" placeholder="Confirm Password" />
+            <input type="email" name="email" placeholder="Email" autocomplete="off" />
+            <input type="password" name="password" placeholder="Password" autocomplete="off" />
+            <input type="password" name="confirmpassword" placeholder="Confirm Password" autocomplete="off" />
             <button type="submit">Sign Up</button>
         </form>
     </div>
@@ -23,8 +23,8 @@
                 <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <span>or use your account</span>
-            <input type="email" name="email" placeholder="Email" />
-            <input type="password" name="password" placeholder="Password" />
+            <input type="email" name="email" placeholder="Email" autocomplete="off" />
+            <input type="password" name="password" placeholder="Password" autocomplete="off" />
             <label>Remember me: <input type="checkbox" name="remember_me"></label>
             <a href="#">Forgot your password?</a>
             <button type="submit">Sign In</button>

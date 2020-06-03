@@ -50,9 +50,6 @@ require_once realpath(__DIR__.'/../config/app.php');
 setErrorLogging();
 init();
 
-header('Set-Cookie: foo="Now I see You"');
-setcookie('bar', strval('Now I see You again'));
-
 require_once CORE.'/Request.php';
 require_once CORE.'/Router.php';
 require_once CORE.'/Session.php';

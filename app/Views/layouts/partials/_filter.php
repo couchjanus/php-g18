@@ -42,18 +42,6 @@
             </div><span class="badge status-primary">3</span>
         </div>
     </div>
-
-    <script>
-    //     let categoryChack = document.querySelectorAll(".categoryChack");
-    //     categoryChack.forEach(item => {
-    //         item.addEventListener('click', function(e){
-    //             if (e.target.checked == true) {
-    //                 alert("you checked this box");
-    //                 // api/categories/{id}
-    //             }
-    //         })
-    // });
-    </script>
 </section>
 
 

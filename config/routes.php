@@ -30,15 +30,29 @@ $router->get('admin/users', 'Admin\UserController@index');
 $router->get('admin/users/create', 'Admin\UserController@create');
 $router->post('admin/users/store', 'Admin\UserController@store');
 
+$router->get('admin/orders', 'Admin\OrderController@index');
+$router->get('admin/orders/show/{id}', 'Admin\OrderController@show');
+$router->post('admin/orders/edit/{id}', 'Admin\OrderController@edit');
+$router->post('admin/orders/update', 'Admin\OrderController@patch');
+$router->get('admin/orders/delete/{id}', 'Admin\OrderController@delete');
+$router->post('admin/orders/delete', 'Admin\OrderController@destroy');
+
 $router->get('api/shop', 'HomeController@getProducts');
 $router->get('api/shop/{id}', 'HomeController@getProduct');
 $router->get('api/product/{id}', 'HomeController@getProductItem');
 $router->get('api/categories', 'HomeController@getCategories');
 $router->get('api/categories/{id}', 'HomeController@getProductsByCategory');
 
+$router->post('api/cart', 'OrderController@cart');
 
 $router->get('sign', 'AuthController@signForm');
 $router->post('register', 'AuthController@signup');
 $router->post('login', 'AuthController@signin');
 $router->get('logout', 'AuthController@logout');
+
 $router->get('profile', 'ProfileController@index');
+$router->get('profile/orders', 'ProfileController@ordersList');
+$router->get('profile/orders/view/{id}', 'ProfileController@orderView');
+$router->get('profile/orders/check/{id}', 'ProfileController@checkOrder');
+$router->post('profile/orders/change', 'ProfileController@changeOrder');
+

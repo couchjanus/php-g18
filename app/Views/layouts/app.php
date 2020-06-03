@@ -15,15 +15,21 @@
       <div class="cart-footer">
         <h3>your total : $<span class="cart-total">0</span></h3>
         <a class="clear-cart btn_card">clear cart</a>
+
+        <p class="checkout">
+          <?php if (Helper::isGuest()) :?>
+            To make your order please <a href="/sign" class="btn_card check-out">Sign In</a>
+          <?php else :?>
+              <a href="#" class="check-out btn_card checkout__now">Checkout</a>
+          <?php endif;?>
+        </p>
       </div>
     </div>
   </aside>
   <!-- end of cart -->
 
   <main>
-    <?php require_once VIEWS.'/layouts/partials/_flash-message.php'; ?>
     <?php include(VIEWS."/".$template); ?>
-
   </main>
    
    <div class="overlay"></div>

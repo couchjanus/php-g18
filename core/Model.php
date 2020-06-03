@@ -104,6 +104,14 @@ class Model
         return $statment->fetch(PDO::FETCH_OBJ);
     }
 
+    public static function getSqlById($sql, $id){
+        $pdo = Connection::connect();
+        $statment = $pdo->preparedStatment($sql);
+        $statment->bindParam(':id', $id);
+        $statment->execute();
+        return $statment->fetchAll(PDO::FETCH_OBJ);
+    }
+
     public static function getOne($sql){
         $pdo = Connection::connect();
         $statment = $pdo->preparedStatment($sql);

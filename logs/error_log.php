@@ -2211,3 +2211,574 @@ Stack trace:
 [01-Jun-2020 12:35:42 Europe/Kiev] PHP   5. AuthController->logout() /home/janus/www/php-g18/core/Router.php:74
 [01-Jun-2020 12:35:42 Europe/Kiev] PHP   6. Session::destroy() /home/janus/www/php-g18/app/Controllers/AuthController.php:141
 [01-Jun-2020 12:35:42 Europe/Kiev] PHP   7. session_unset() /home/janus/www/php-g18/core/Session.php:59
+[01-Jun-2020 18:16:37 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method ProfileController::render() in /home/janus/www/php-g18/app/Controllers/ProfileController.php:54
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(74): ProfileController->index()
+#1 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#2 /home/janus/www/php-g18/bootstrap/app.php(61): Router->run()
+#3 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 54
+[02-Jun-2020 14:20:50 Europe/Kiev] PHP Warning:  session_unset() expects exactly 0 parameters, 1 given in /home/janus/www/php-g18/core/Session.php on line 59
+[02-Jun-2020 14:20:50 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 14:20:50 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 14:20:50 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 14:20:50 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:61
+[02-Jun-2020 14:20:50 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 14:20:50 Europe/Kiev] PHP   5. AuthController->logout() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 14:20:50 Europe/Kiev] PHP   6. Session::destroy() /home/janus/www/php-g18/app/Controllers/AuthController.php:139
+[02-Jun-2020 14:20:50 Europe/Kiev] PHP   7. session_unset() /home/janus/www/php-g18/core/Session.php:59
+[02-Jun-2020 15:05:02 Europe/Kiev] PHP Warning:  require_once(/home/janus/www/php-g18/app/Models/Order.php): failed to open stream: No such file or directory in /home/janus/www/php-g18/app/Controllers/OrderController.php on line 4
+[02-Jun-2020 15:05:02 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 15:05:02 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 15:05:02 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 15:05:02 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 15:05:02 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 15:05:02 Europe/Kiev] PHP   5. include_once() /home/janus/www/php-g18/core/Router.php:61
+[02-Jun-2020 15:05:02 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required '/home/janus/www/php-g18/app/Models/Order.php' (include_path='.:/usr/share/php') in /home/janus/www/php-g18/app/Controllers/OrderController.php on line 4
+[02-Jun-2020 15:05:02 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 15:05:02 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 15:05:02 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 15:05:02 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 15:05:02 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 15:05:02 Europe/Kiev] PHP   5. include_once() /home/janus/www/php-g18/core/Router.php:61
+[02-Jun-2020 15:06:03 Europe/Kiev] PHP Warning:  require_once(/home/janus/www/php-g18/app/Models/Order.php): failed to open stream: No such file or directory in /home/janus/www/php-g18/app/Controllers/OrderController.php on line 4
+[02-Jun-2020 15:06:03 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 15:06:03 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 15:06:03 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 15:06:03 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 15:06:03 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 15:06:03 Europe/Kiev] PHP   5. include_once() /home/janus/www/php-g18/core/Router.php:61
+[02-Jun-2020 15:06:03 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required '/home/janus/www/php-g18/app/Models/Order.php' (include_path='.:/usr/share/php') in /home/janus/www/php-g18/app/Controllers/OrderController.php on line 4
+[02-Jun-2020 15:06:03 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 15:06:03 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 15:06:03 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 15:06:03 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 15:06:03 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 15:06:03 Europe/Kiev] PHP   5. include_once() /home/janus/www/php-g18/core/Router.php:61
+[02-Jun-2020 15:22:34 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(user_id, products) values (?, ?)' at line 1 in /home/janus/www/php-g18/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g18/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g18/core/Model.php(44): Connection->preparedStatment()
+#2 /home/janus/www/php-g18/app/Controllers/OrderController.php(66): Model::insert()
+#3 /home/janus/www/php-g18/core/Router.php(74): OrderController->cart()
+#4 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#5 /home/janus/www/php-g18/bootstrap/app.php(58): Router->run()
+#6 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g18/core/Connection.php on line 26
+[02-Jun-2020 15:36:51 Europe/Kiev] PHP Notice:  Undefined variable: options in /home/janus/www/php-g18/app/Controllers/OrderController.php on line 69
+[02-Jun-2020 15:36:51 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 15:36:51 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 15:36:51 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 15:36:51 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 15:36:51 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 15:36:51 Europe/Kiev] PHP   5. OrderController->cart() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP Notice:  Undefined variable: order in /home/janus/www/php-g18/app/Views/admin/orders/index.php on line 5
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP   5. OrderController->index() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/Admin/OrderController.php:17
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/admin.php:20
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/janus/www/php-g18/app/Views/admin/orders/index.php on line 5
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP   5. OrderController->index() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/Admin/OrderController.php:17
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 16:31:04 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/admin.php:20
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP Notice:  Undefined property: stdClass::$id in /home/janus/www/php-g18/app/Views/admin/orders/index.php on line 17
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   5. OrderController->index() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/Admin/OrderController.php:17
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/admin.php:20
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP Notice:  Undefined property: stdClass::$id in /home/janus/www/php-g18/app/Views/admin/orders/index.php on line 20
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   5. OrderController->index() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/Admin/OrderController.php:17
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/admin.php:20
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP Notice:  Undefined property: stdClass::$id in /home/janus/www/php-g18/app/Views/admin/orders/index.php on line 21
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   5. OrderController->index() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/Admin/OrderController.php:17
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/admin.php:20
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP Notice:  Undefined property: stdClass::$id in /home/janus/www/php-g18/app/Views/admin/orders/index.php on line 22
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   5. OrderController->index() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/Admin/OrderController.php:17
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 16:39:46 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/admin.php:20
+[02-Jun-2020 17:15:36 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method ProfileController::render() in /home/janus/www/php-g18/app/Controllers/ProfileController.php:71
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(74): ProfileController->ordersList()
+#1 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#2 /home/janus/www/php-g18/bootstrap/app.php(58): Router->run()
+#3 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 71
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/janus/www/php-g18/app/Views/profile/orders.php on line 8
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   5. ProfileController->ordersList() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:71
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP Notice:  Trying to get property 'id' of non-object in /home/janus/www/php-g18/app/Views/profile/orders.php on line 21
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   5. ProfileController->ordersList() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:71
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP Notice:  Trying to get property 'formated_date' of non-object in /home/janus/www/php-g18/app/Views/profile/orders.php on line 22
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   5. ProfileController->ordersList() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:71
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 17:15:56 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Helper::getOrderStatus() in /home/janus/www/php-g18/app/Views/profile/orders.php:23
+Stack trace:
+#0 /home/janus/www/php-g18/app/Views/layouts/app.php(32): include()
+#1 /home/janus/www/php-g18/core/View.php(31): require('/home/janus/www...')
+#2 /home/janus/www/php-g18/app/Controllers/ProfileController.php(71): View->render()
+#3 /home/janus/www/php-g18/core/Router.php(74): ProfileController->ordersList()
+#4 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#5 /home/janus/www/php-g18/bootstrap/app.php(58): Router->run()
+#6 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g18/app/Views/profile/orders.php on line 23
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/janus/www/php-g18/app/Views/profile/orders.php on line 8
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   5. ProfileController->ordersList() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:73
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP Notice:  Trying to get property 'id' of non-object in /home/janus/www/php-g18/app/Views/profile/orders.php on line 21
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   5. ProfileController->ordersList() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:73
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP Notice:  Trying to get property 'formated_date' of non-object in /home/janus/www/php-g18/app/Views/profile/orders.php on line 22
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   5. ProfileController->ordersList() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:73
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 17:18:36 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Helper::getOrderStatus() in /home/janus/www/php-g18/app/Views/profile/orders.php:23
+Stack trace:
+#0 /home/janus/www/php-g18/app/Views/layouts/app.php(32): include()
+#1 /home/janus/www/php-g18/core/View.php(31): require('/home/janus/www...')
+#2 /home/janus/www/php-g18/app/Controllers/ProfileController.php(73): View->render()
+#3 /home/janus/www/php-g18/core/Router.php(74): ProfileController->ordersList()
+#4 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#5 /home/janus/www/php-g18/bootstrap/app.php(58): Router->run()
+#6 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g18/app/Views/profile/orders.php on line 23
+[02-Jun-2020 17:22:16 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Helper::getOrderStatus() in /home/janus/www/php-g18/app/Views/profile/orders.php:23
+Stack trace:
+#0 /home/janus/www/php-g18/app/Views/layouts/app.php(32): include()
+#1 /home/janus/www/php-g18/core/View.php(31): require('/home/janus/www...')
+#2 /home/janus/www/php-g18/app/Controllers/ProfileController.php(73): View->render()
+#3 /home/janus/www/php-g18/core/Router.php(74): ProfileController->ordersList()
+#4 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#5 /home/janus/www/php-g18/bootstrap/app.php(58): Router->run()
+#6 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g18/app/Views/profile/orders.php on line 23
+[02-Jun-2020 17:26:12 Europe/Kiev] PHP Notice:  Undefined variable: options in /home/janus/www/php-g18/app/Controllers/OrderController.php on line 66
+[02-Jun-2020 17:26:12 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 17:26:12 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 17:26:12 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 17:26:12 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 17:26:12 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 17:26:12 Europe/Kiev] PHP   5. OrderController->cart() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 17:57:58 Europe/Kiev] PHP Fatal error:  Uncaught Error: Object of class ProfileController could not be converted to string in /home/janus/www/php-g18/core/Router.php:66
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(40): Router->init()
+#1 /home/janus/www/php-g18/bootstrap/app.php(58): Router->run()
+#2 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g18/core/Router.php on line 66
+[02-Jun-2020 17:58:45 Europe/Kiev] PHP Notice:  Trying to get property 'id' of non-object in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 90
+[02-Jun-2020 17:58:45 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 17:58:45 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 17:58:45 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 17:58:45 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 17:58:45 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 17:58:45 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 17:58:45 Europe/Kiev] PHP Notice:  Trying to get property 'amount' of non-object in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 91
+[02-Jun-2020 17:58:45 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 17:58:45 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 17:58:45 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 17:58:45 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 17:58:45 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 17:58:45 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 18:02:17 Europe/Kiev] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /home/janus/www/php-g18/app/Controllers/ProfileController.php:94
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(74): ProfileController->orderView()
+#1 /home/janus/www/php-g18/core/Router.php(40): Router->init()
+#2 /home/janus/www/php-g18/bootstrap/app.php(58): Router->run()
+#3 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 94
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP Notice:  Trying to get property 'order_date' of non-object in /home/janus/www/php-g18/app/Views/profile/order.php on line 10
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:104
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP Notice:  Trying to get property 'status' of non-object in /home/janus/www/php-g18/app/Views/profile/order.php on line 13
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:104
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 18:33:55 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP Notice:  Undefined index: order_date in /home/janus/www/php-g18/app/Views/profile/order.php on line 10
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:104
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP Notice:  Trying to get property 'status' of non-object in /home/janus/www/php-g18/app/Views/profile/order.php on line 13
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:104
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 18:34:47 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP Notice:  Trying to get property 'id' of non-object in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 83
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP Notice:  Trying to get property 'products' of non-object in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 86
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP Warning:  Invalid argument supplied for foreach() in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 89
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP Notice:  Trying to get property 'order_date' of non-object in /home/janus/www/php-g18/app/Views/profile/order.php on line 10
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:104
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP Notice:  Trying to get property 'status' of non-object in /home/janus/www/php-g18/app/Views/profile/order.php on line 13
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:104
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 18:35:59 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP Notice:  Trying to get property 'order_date' of non-object in /home/janus/www/php-g18/app/Views/profile/order.php on line 10
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:104
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP Notice:  Trying to get property 'status' of non-object in /home/janus/www/php-g18/app/Views/profile/order.php on line 13
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:104
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 18:36:53 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP Notice:  Trying to get property 'order_date' of non-object in /home/janus/www/php-g18/app/Views/profile/order.php on line 10
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:104
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP Notice:  Trying to get property 'status' of non-object in /home/janus/www/php-g18/app/Views/profile/order.php on line 13
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:104
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 18:38:38 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 20:46:32 Europe/Kiev] PHP Notice:  Trying to get property 'id' of non-object in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 68
+[02-Jun-2020 20:46:32 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 20:46:32 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 20:46:32 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 20:46:32 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 20:46:32 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 20:46:32 Europe/Kiev] PHP   5. ProfileController->ordersList() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 20:46:33 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in /home/janus/www/php-g18/app/Views/profile/_profile.php on line 10
+[02-Jun-2020 20:46:33 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 20:46:33 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 20:46:33 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 20:46:33 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 20:46:33 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 20:46:33 Europe/Kiev] PHP   5. ProfileController->ordersList() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 20:46:33 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:74
+[02-Jun-2020 20:46:33 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 20:46:33 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 20:46:33 Europe/Kiev] PHP   9. require_once() /home/janus/www/php-g18/app/Views/profile/orders.php:2
+[02-Jun-2020 21:40:28 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in /home/janus/www/php-g18/app/Views/profile/_profile.php on line 10
+[02-Jun-2020 21:40:28 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 21:40:28 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 21:40:28 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 21:40:28 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 21:40:28 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 21:40:28 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 21:40:28 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:102
+[02-Jun-2020 21:40:28 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 21:40:28 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 21:40:28 Europe/Kiev] PHP   9. require_once() /home/janus/www/php-g18/app/Views/profile/order.php:2
+[02-Jun-2020 21:40:37 Europe/Kiev] PHP Notice:  Trying to get property 'id' of non-object in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 68
+[02-Jun-2020 21:40:37 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 21:40:37 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 21:40:37 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 21:40:37 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 21:40:37 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 21:40:37 Europe/Kiev] PHP   5. ProfileController->ordersList() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 21:40:37 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in /home/janus/www/php-g18/app/Views/profile/_profile.php on line 10
+[02-Jun-2020 21:40:37 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 21:40:37 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 21:40:37 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 21:40:37 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 21:40:37 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[02-Jun-2020 21:40:37 Europe/Kiev] PHP   5. ProfileController->ordersList() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 21:40:37 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:72
+[02-Jun-2020 21:40:37 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 21:40:37 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 21:40:37 Europe/Kiev] PHP   9. require_once() /home/janus/www/php-g18/app/Views/profile/orders.php:2
+[02-Jun-2020 22:41:49 Europe/Kiev] PHP Notice:  compact(): Undefined variable: subtitle in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 99
+[02-Jun-2020 22:41:49 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 22:41:49 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 22:41:49 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 22:41:49 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 22:41:49 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 22:41:49 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 22:41:49 Europe/Kiev] PHP   6. compact() /home/janus/www/php-g18/app/Controllers/ProfileController.php:99
+[02-Jun-2020 22:55:43 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function getOrder() in /home/janus/www/php-g18/app/Controllers/ProfileController.php:113
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(74): ProfileController->checkOrder()
+#1 /home/janus/www/php-g18/core/Router.php(40): Router->init()
+#2 /home/janus/www/php-g18/bootstrap/app.php(58): Router->run()
+#3 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 113
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP Notice:  Undefined variable: order in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 94
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP Notice:  Trying to get property 'id' of non-object in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 94
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP Notice:  compact(): Undefined variable: order in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 96
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   6. compact() /home/janus/www/php-g18/app/Controllers/ProfileController.php:96
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP Notice:  Undefined variable: order in /home/janus/www/php-g18/app/Views/profile/order.php on line 8
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:96
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP Notice:  Trying to get property 'order_date' of non-object in /home/janus/www/php-g18/app/Views/profile/order.php on line 8
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:96
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP Notice:  Undefined variable: order in /home/janus/www/php-g18/app/Views/profile/order.php on line 9
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:96
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP Notice:  Trying to get property 'status' of non-object in /home/janus/www/php-g18/app/Views/profile/order.php on line 9
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:96
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 22:57:14 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP Notice:  compact(): Undefined variable: order in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 96
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   6. compact() /home/janus/www/php-g18/app/Controllers/ProfileController.php:96
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP Notice:  Undefined variable: order in /home/janus/www/php-g18/app/Views/profile/order.php on line 8
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:96
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP Notice:  Trying to get property 'order_date' of non-object in /home/janus/www/php-g18/app/Views/profile/order.php on line 8
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:96
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP Notice:  Undefined variable: order in /home/janus/www/php-g18/app/Views/profile/order.php on line 9
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:96
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP Notice:  Trying to get property 'status' of non-object in /home/janus/www/php-g18/app/Views/profile/order.php on line 9
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP Stack trace:
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:40
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   5. ProfileController->orderView() /home/janus/www/php-g18/core/Router.php:74
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g18/app/Controllers/ProfileController.php:96
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   7. require() /home/janus/www/php-g18/core/View.php:31
+[02-Jun-2020 22:58:18 Europe/Kiev] PHP   8. include() /home/janus/www/php-g18/app/Views/layouts/app.php:32
+[03-Jun-2020 11:59:09 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Orser' not found in /home/janus/www/php-g18/app/Controllers/ProfileController.php:132
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(74): ProfileController->changeOrder()
+#1 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#2 /home/janus/www/php-g18/bootstrap/app.php(58): Router->run()
+#3 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 132
+[03-Jun-2020 11:59:34 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Connection::getPreparedStatment() in /home/janus/www/php-g18/app/Models/Order.php:81
+Stack trace:
+#0 /home/janus/www/php-g18/app/Controllers/ProfileController.php(132): Order::update()
+#1 /home/janus/www/php-g18/core/Router.php(74): ProfileController->changeOrder()
+#2 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#3 /home/janus/www/php-g18/bootstrap/app.php(58): Router->run()
+#4 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#5 {main}
+  thrown in /home/janus/www/php-g18/app/Models/Order.php on line 81

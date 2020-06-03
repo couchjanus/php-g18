@@ -1,3 +1,12 @@
+# UTF-8 Encoding
+AddDefaultCharset utf-8
+
+AddCharset utf-8 .html .js .css .json .xml .rss .atom .md
+# derectory Browsing
+
+Options -Indexes
+
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
