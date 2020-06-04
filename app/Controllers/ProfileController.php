@@ -3,28 +3,21 @@
 require_once MODELS.'/User.php';
 require_once MODELS.'/Order.php';
 require_once MODELS.'/Product.php';
-require_once CORE.'/Session.php';
-require_once CORE.'/Controller.php';
 require_once CORE.'/Helper.php';
 require_once CORE.'/Request.php';
+
+require_once CORE.'/Auth.php';
+require_once CORE.'/AuthInterface.php';
+
 /**
  * ProfileController.php
- * Контроллер для authetication users
+ * 
  */
-class ProfileController extends Controller
+class ProfileController extends Auth implements AuthInterface
 {
-    private $user;
-    
     public function __construct()
     {
         parent::__construct();
-        Session::init();
-        $userId = Session::get('userId');
-        if ($userId) {
-            $this->user = User::getByPrimaryKey($userId);
-        } else {
-            $this->user = null;
-        }
     }
      
     /**
@@ -40,6 +33,11 @@ class ProfileController extends Controller
         $title = 'Личный кабинет ';
         $user = $this->user;
         $this->view->render('profile/index', compact('title', 'user'));
+    }
+
+    public function isAdmin()
+    {
+        return $this->user->role_id;
     }
 
     /**

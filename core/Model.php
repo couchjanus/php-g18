@@ -1,5 +1,9 @@
 <?php
-require_once CORE.'/Connection.php';
+// require_once CORE.'/Connection.php';
+namespace Core;
+
+use Core\Connection;
+use PDO;
 
 class Model
 {

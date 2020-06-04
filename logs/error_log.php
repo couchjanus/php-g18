@@ -2782,3 +2782,123 @@ Stack trace:
 #4 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
 #5 {main}
   thrown in /home/janus/www/php-g18/app/Models/Order.php on line 81
+[03-Jun-2020 14:31:16 Europe/Kiev] PHP Fatal error:  Uncaught Error: Interface 'AuthInterface' not found in /home/janus/www/php-g18/app/Controllers/ProfileController.php:16
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(61): include_once()
+#1 /home/janus/www/php-g18/core/Router.php(31): Router->init()
+#2 /home/janus/www/php-g18/bootstrap/app.php(58): Router->run()
+#3 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 16
+[03-Jun-2020 14:31:51 Europe/Kiev] PHP Fatal error:  Class ProfileController contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (AuthInterface::isAdmin) in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 18
+[03-Jun-2020 14:31:51 Europe/Kiev] PHP Stack trace:
+[03-Jun-2020 14:31:51 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[03-Jun-2020 14:31:51 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[03-Jun-2020 14:31:51 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[03-Jun-2020 14:31:51 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[03-Jun-2020 14:31:51 Europe/Kiev] PHP   5. include_once() /home/janus/www/php-g18/core/Router.php:61
+[03-Jun-2020 16:23:45 Europe/Kiev] PHP Warning:  session_unset() expects exactly 0 parameters, 1 given in /home/janus/www/php-g18/core/Session.php on line 59
+[03-Jun-2020 16:23:45 Europe/Kiev] PHP Stack trace:
+[03-Jun-2020 16:23:45 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[03-Jun-2020 16:23:45 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[03-Jun-2020 16:23:45 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[03-Jun-2020 16:23:45 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[03-Jun-2020 16:23:45 Europe/Kiev] PHP   5. LoginController->logout() /home/janus/www/php-g18/core/Router.php:74
+[03-Jun-2020 16:23:45 Europe/Kiev] PHP   6. Session::destroy() /home/janus/www/php-g18/app/Controllers/LoginController.php:70
+[03-Jun-2020 16:23:45 Europe/Kiev] PHP   7. session_unset() /home/janus/www/php-g18/core/Session.php:59
+[03-Jun-2020 16:23:54 Europe/Kiev] PHP Warning:  require_once(/home/janus/www/php-g18/app/Controllers/AuthController.php): failed to open stream: No such file or directory in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 9
+[03-Jun-2020 16:23:54 Europe/Kiev] PHP Stack trace:
+[03-Jun-2020 16:23:54 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[03-Jun-2020 16:23:54 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[03-Jun-2020 16:23:54 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[03-Jun-2020 16:23:54 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[03-Jun-2020 16:23:54 Europe/Kiev] PHP   5. include_once() /home/janus/www/php-g18/core/Router.php:61
+[03-Jun-2020 16:23:54 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required '/home/janus/www/php-g18/app/Controllers/AuthController.php' (include_path='.:/usr/share/php') in /home/janus/www/php-g18/app/Controllers/ProfileController.php on line 9
+[03-Jun-2020 16:23:54 Europe/Kiev] PHP Stack trace:
+[03-Jun-2020 16:23:54 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[03-Jun-2020 16:23:54 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[03-Jun-2020 16:23:54 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[03-Jun-2020 16:23:54 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[03-Jun-2020 16:23:54 Europe/Kiev] PHP   5. include_once() /home/janus/www/php-g18/core/Router.php:61
+[03-Jun-2020 16:26:21 Europe/Kiev] PHP Warning:  session_unset() expects exactly 0 parameters, 1 given in /home/janus/www/php-g18/core/Session.php on line 59
+[03-Jun-2020 16:26:21 Europe/Kiev] PHP Stack trace:
+[03-Jun-2020 16:26:21 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[03-Jun-2020 16:26:21 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[03-Jun-2020 16:26:21 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[03-Jun-2020 16:26:21 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[03-Jun-2020 16:26:21 Europe/Kiev] PHP   5. LoginController->logout() /home/janus/www/php-g18/core/Router.php:74
+[03-Jun-2020 16:26:21 Europe/Kiev] PHP   6. Session::destroy() /home/janus/www/php-g18/app/Controllers/LoginController.php:70
+[03-Jun-2020 16:26:21 Europe/Kiev] PHP   7. session_unset() /home/janus/www/php-g18/core/Session.php:59
+[03-Jun-2020 16:27:11 Europe/Kiev] PHP Warning:  session_unset() expects exactly 0 parameters, 1 given in /home/janus/www/php-g18/core/Session.php on line 59
+[03-Jun-2020 16:27:11 Europe/Kiev] PHP Stack trace:
+[03-Jun-2020 16:27:11 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[03-Jun-2020 16:27:11 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[03-Jun-2020 16:27:11 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[03-Jun-2020 16:27:11 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[03-Jun-2020 16:27:11 Europe/Kiev] PHP   5. LoginController->logout() /home/janus/www/php-g18/core/Router.php:74
+[03-Jun-2020 16:27:11 Europe/Kiev] PHP   6. Session::destroy() /home/janus/www/php-g18/app/Controllers/LoginController.php:70
+[03-Jun-2020 16:27:11 Europe/Kiev] PHP   7. session_unset() /home/janus/www/php-g18/core/Session.php:59
+[03-Jun-2020 16:48:01 Europe/Kiev] PHP Warning:  session_unset() expects exactly 0 parameters, 1 given in /home/janus/www/php-g18/core/Session.php on line 59
+[03-Jun-2020 16:48:01 Europe/Kiev] PHP Stack trace:
+[03-Jun-2020 16:48:01 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[03-Jun-2020 16:48:01 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[03-Jun-2020 16:48:01 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g18/bootstrap/app.php:58
+[03-Jun-2020 16:48:01 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[03-Jun-2020 16:48:01 Europe/Kiev] PHP   5. LoginController->logout() /home/janus/www/php-g18/core/Router.php:74
+[03-Jun-2020 16:48:01 Europe/Kiev] PHP   6. Session::destroy() /home/janus/www/php-g18/app/Controllers/LoginController.php:70
+[03-Jun-2020 16:48:01 Europe/Kiev] PHP   7. session_unset() /home/janus/www/php-g18/core/Session.php:59
+[04-Jun-2020 15:14:35 Europe/Kiev] PHP Notice:  Undefined offset: 0 in /home/janus/www/php-g18/app/Controllers/Admin/ProductController.php on line 58
+[04-Jun-2020 15:14:35 Europe/Kiev] PHP Stack trace:
+[04-Jun-2020 15:14:35 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[04-Jun-2020 15:14:35 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[04-Jun-2020 15:14:35 Europe/Kiev] PHP   3. App->init() /home/janus/www/php-g18/bootstrap/app.php:30
+[04-Jun-2020 15:14:35 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-g18/core/App.php:27
+[04-Jun-2020 15:14:35 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[04-Jun-2020 15:14:35 Europe/Kiev] PHP   6. ProductController->store() /home/janus/www/php-g18/core/Router.php:74
+[04-Jun-2020 15:14:35 Europe/Kiev] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/janus/www/php-g18/app/Controllers/Admin/ProductController.php on line 58
+[04-Jun-2020 15:14:35 Europe/Kiev] PHP Stack trace:
+[04-Jun-2020 15:14:35 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g18/public/index.php:0
+[04-Jun-2020 15:14:35 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g18/public/index.php:3
+[04-Jun-2020 15:14:35 Europe/Kiev] PHP   3. App->init() /home/janus/www/php-g18/bootstrap/app.php:30
+[04-Jun-2020 15:14:35 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-g18/core/App.php:27
+[04-Jun-2020 15:14:35 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-g18/core/Router.php:31
+[04-Jun-2020 15:14:35 Europe/Kiev] PHP   6. ProductController->store() /home/janus/www/php-g18/core/Router.php:74
+[04-Jun-2020 16:52:07 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Controller' not found in /home/janus/www/php-g18/app/Controllers/HomeController.php:7
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(62): include_once()
+#1 /home/janus/www/php-g18/core/Router.php(32): Core\Router->init()
+#2 /home/janus/www/php-g18/core/App.php(27): Core\Router->run()
+#3 /home/janus/www/php-g18/bootstrap/app.php(32): Core\App->init()
+#4 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#5 {main}
+  thrown in /home/janus/www/php-g18/app/Controllers/HomeController.php on line 7
+[04-Jun-2020 16:55:14 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'HomeController' not found in /home/janus/www/php-g18/core/Router.php:63
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(32): Core\Router->init()
+#1 /home/janus/www/php-g18/core/App.php(27): Core\Router->run()
+#2 /home/janus/www/php-g18/bootstrap/app.php(32): Core\App->init()
+#3 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g18/core/Router.php on line 63
+[04-Jun-2020 16:59:42 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'App\Models\Category' not found in /home/janus/www/php-g18/app/Controllers/HomeController.php:17
+Stack trace:
+#0 /home/janus/www/php-g18/core/Router.php(99): App\Controllers\HomeController->index()
+#1 /home/janus/www/php-g18/core/Router.php(32): Core\Router->init()
+#2 /home/janus/www/php-g18/core/App.php(27): Core\Router->run()
+#3 /home/janus/www/php-g18/bootstrap/app.php(32): Core\App->init()
+#4 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#5 {main}
+  thrown in /home/janus/www/php-g18/app/Controllers/HomeController.php on line 17
+[04-Jun-2020 17:02:05 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Model' not found in /home/janus/www/php-g18/app/Models/Product.php:5
+Stack trace:
+#0 /home/janus/www/php-g18/vendor/composer/ClassLoader.php(444): include()
+#1 /home/janus/www/php-g18/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 /home/janus/www/php-g18/app/Controllers/HomeController.php(23): spl_autoload_call()
+#4 /home/janus/www/php-g18/core/Router.php(99): App\Controllers\HomeController->getProducts()
+#5 /home/janus/www/php-g18/core/Router.php(32): Core\Router->init()
+#6 /home/janus/www/php-g18/core/App.php(27): Core\Router->run()
+#7 /home/janus/www/php-g18/bootstrap/app.php(32): Core\App->init()
+#8 /home/janus/www/php-g18/public/index.php(3): require_once('/home/janus/www...')
+#9 {main}
+  thrown in /home/janus/www/php-g18/app/Models/Product.php on line 5

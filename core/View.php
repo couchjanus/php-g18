@@ -1,4 +1,5 @@
 <?php
+namespace Core;
 
 /**
  * The view class.

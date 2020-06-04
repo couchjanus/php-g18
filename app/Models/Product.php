@@ -1,6 +1,9 @@
 <?php
-require_once CORE.'/Model.php';
-require_once CORE.'/Connection.php';
+// require_once CORE.'/Model.php';
+// require_once CORE.'/Connection.php';
+namespace App\Models;
+
+use Core\Model;
 
 class Product extends Model
 {

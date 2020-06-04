@@ -1,7 +1,10 @@
 <?php
-require_once CORE.'/View.php';
+// require_once CORE.'/View.php';
+namespace Core;
 
-class Controller
+use Core\View;
+
+abstract class Controller
 {
    protected $view;
 

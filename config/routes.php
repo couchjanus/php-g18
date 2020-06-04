@@ -45,10 +45,10 @@ $router->get('api/categories/{id}', 'HomeController@getProductsByCategory');
 
 $router->post('api/cart', 'OrderController@cart');
 
-$router->get('sign', 'AuthController@signForm');
-$router->post('register', 'AuthController@signup');
-$router->post('login', 'AuthController@signin');
-$router->get('logout', 'AuthController@logout');
+$router->get('sign', 'LoginController@signForm');
+$router->post('register', 'RegisterController@signup');
+$router->post('login', 'LoginController@signin');
+$router->get('logout', 'LoginController@logout');
 
 $router->get('profile', 'ProfileController@index');
 $router->get('profile/orders', 'ProfileController@ordersList');

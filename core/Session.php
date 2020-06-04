@@ -1,4 +1,5 @@
 <?php
+namespace Core;
 
 class Session
 {
@@ -56,7 +57,7 @@ class Session
 	public static function destroy($key){
 
 		if(self::$_sessionStarted == true){
-			session_unset($key);
+			session_unset();
 			session_destroy();
 		}
 

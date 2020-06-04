@@ -1,92 +1,23 @@
 <?php
 /**
- * AuthController.php
+ * LoginController.php
  * Контроллер для authetication users
  */
 require_once MODELS.'/User.php';
 require_once CORE.'/Session.php';
-require_once CORE.'/Controller.php';
+require_once CORE.'/Auth.php';
+require_once CORE.'/Request.php';
 
-class AuthController extends Controller
+class LoginController extends Auth
 {
-    private $logged_in = false;
     private $email;
-    private $user_id;
-
-    private $costs = [
-        'cost' => 12,
-    ];
-    
-    // array to hold all of the errors 
-    private $error = NULL;
-    private $message = NULL;
-
-    //The user's userinfo in an array
-	public $user = NULL;
-   
     //a string holding the cookie prefix
 	private $cookie_prefix = '';
 	    
     public function __construct()
 	{
         parent::__construct();
-        $session_id = Session::init();
-		
-        if($userId=Session::get('userId')){
-            $this->user = User::getByPrimaryKey($userId);
-            if( $this->user != NULL )
-                $this->logged_in = true;
-                $this->user_id = $userId;
-		}
-		
-		// session failed, try cookies
-		if($this->logged_in === false && isset($_COOKIE[$this->cookie_prefix.'ID'])){
-			$id = intval($_COOKIE[$this->cookie_prefix.'ID']);
-			$email = strval($_COOKIE[ $this->cookie_prefix.'UserEmail']);
-							
-			if($id && $email)
-                $this->signin();
-		}
 	}
-
-    /**
-     * страница signup
-     *
-     * @return bool
-     */
-    public function signForm()
-    {
-        $this->view->render('auth/index', [], 'auth');
-    }
-
-    public function signup()
-    {
-        $request = new Request();
-        $password = $request->password;
-        $confirmpassword = $request->confirmpassword;
-        
-        if (self::is_valid_passwords($password, $confirmpassword)){
-            list($name, $domain) = explode('@', $request->email);
-            $hash = password_hash($password, PASSWORD_BCRYPT, $this->costs);
-            (new User())::insert(["name"=>$name, "email"=>$request->email, "password" => $hash]);
-            header('Location: /sign');
-        } else {
-            $this->error = "Your passwords do not match. Please type carefully.";
-            Session::set('error', $this->error);
-            header('Location: /sign');
-        }
-    }
-
-    // method for password verification
-    static private function is_valid_passwords($password, $confirmpassword) 
-    {
-        // Your validation code.
-        if ($password != $confirmpassword) {
-            return false;
-        }
-        // passwords match
-        return true;
-    }
 
     /**
      * Авторизация пользователя

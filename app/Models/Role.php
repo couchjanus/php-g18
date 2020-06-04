@@ -3,7 +3,10 @@
  * class Role
  */
 
-require_once CORE.'/Model.php';
+// require_once CORE.'/Model.php';
+namespace App\Models;
+
+use Core\Model;
 
 class Role extends Model
 {

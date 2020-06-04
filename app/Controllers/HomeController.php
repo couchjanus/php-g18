@@ -1,8 +1,13 @@
 <?php
 // HomeController.php
-require_once CORE.'/Controller.php';
-require_once MODELS.'/Category.php';
-require_once MODELS.'/Product.php';
+// require_once CORE.'/Controller.php';
+// require_once MODELS.'/Category.php';
+// require_once MODELS.'/Product.php';
+
+namespace App\Controllers;
+
+use Core\Controller;
+use App\Models\{Category, Product};
 
 class HomeController extends Controller
 {
